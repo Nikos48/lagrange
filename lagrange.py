@@ -76,10 +76,8 @@ if __name__ == '__main__':
     for a, b in zip(labels, points):
         assert(pyfunc(a) - b < 1e-6)
 
-init_printing(use_unicode=False, wrap_line=False, no_global=True)
-
-laga = lagrangePolynomial(
+ourPolynomial = lagrangePolynomial(
     [0.349, 0.350, 0.351, 0.352, 0.353],
     [0.34196, 0.34290, 0.34384, 0.34478, 0.34488])
 
-print(integrate(laga, (x, 0.349, 0.353)))
+print(integrate(ourPolynomial, (x, 0.349, 0.353)))
