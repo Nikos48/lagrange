@@ -81,3 +81,5 @@ ourPolynomial = lagrangePolynomial(
     [0.34196, 0.34290, 0.34384, 0.34478, 0.34488])
 
 print(integrate(ourPolynomial, (x, 0.349, 0.353)))
+
+#output: 0.00137509647174738
